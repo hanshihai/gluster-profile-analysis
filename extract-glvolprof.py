@@ -522,11 +522,10 @@ header='''
     <meta charset="utf-8">
     <link href="static/css/v0.2/nv.d3.css" rel="stylesheet" type="text/css" media="all">
     <link href="static/css/v0.2/pbench_utils.css" rel="stylesheet" type="text/css" media="all">
-    <script src="static/js/v0.2/function-bind.js"></script>
-    <script src="static/js/v0.2/fastdom.js"></script>
-    <script src="static/js/v0.2/d3.js"></script>
+    <script src="static/js/v0.2/d3.v3.js"></script>
     <script src="static/js/v0.2/nv.d3.js"></script>
-    <script src="static/js/v0.2/saveSvgAsPng.js"></script>
+	<script src="static/js/v0.2/stream_layers.js"></script>
+	<script src="static/js/v0.2/index.js"></script>
     <script src="static/js/v0.2/pbench_utils.js"></script>
   </head>
   <body class="with-3d-shadow with-transitions">
