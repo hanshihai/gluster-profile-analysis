@@ -63,7 +63,7 @@ The output (a bunch of CSV files and an HTML summary page) is placed in a subdir
 
 Then copy static folder into gvp.log\_csvdir:
 
-\# cp static gvp.log\_csvdir
+\# cp -R ./static/* ./gvp.log\_csvdir/
 
 To see the graphs, fire up a browser and point it to the URL that the extract script printed, pointing to gvp-graphs.html .
 
