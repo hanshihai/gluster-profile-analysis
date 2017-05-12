@@ -7975,18 +7975,9 @@ d3 = function() {
   d3.time.format = function(template) {
     var n = template.length;
     function format(date) {
-      var string = [], i = -1, j = 0, c, p, f;
-      while (++i < n) {
-        if (template.charCodeAt(i) === 37) {
-          string.push(template.substring(j, i));
-          if ((p = d3_time_formatPads[c = template.charAt(++i)]) != null) c = template.charAt(++i);
-          if (f = d3_time_formats[c]) c = f(date, p == null ? c === "e" ? " " : "0" : p);
-          string.push(c);
-          j = i + 1;
-        }
-      }
-      string.push(template.substring(j, i));
-      return string.join("");
+		var d = new Date();
+		d.setTime(date);
+      return d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
     }
     format.parse = function(string) {
       var d = {
